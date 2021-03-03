@@ -1,10 +1,7 @@
-@import 'variables/Colors';
-@import './Button';
+@import './variables/index.scss';
+@import './_buttons';
 @import './Heading';
 // @import 'bootstrap/scss/bootstrap';
-//BreakPoints
-$mobile: 600px;
-$desktop: 1200px;
 html,
 body {
     padding: 0;
@@ -22,14 +19,14 @@ a {
 }
 
 //Medias
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $screen-min) {
     body {
-        background-color: rgb(47, 152, 187);
+        background-color: var(--color--secondary);
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $tablet-portrait-upper-boundary) {
     body {
-        background-color: greenyellow;
+        background-color: --color--primary;
     }
 }

@@ -9,4 +9,4 @@ export default function Home() {
       <Button>Esto es un boton</Button>
     </div>
   );
-}
+} 

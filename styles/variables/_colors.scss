@@ -1,0 +1,17 @@
+:root {
+    --color--primary-darkest: #0c315a;
+    --color--primary-dark: #1862b5;
+    --color--primary: #1e7be2;
+    --color--primary-light: #8ebcf1;
+    --color--primary-lightest: #e8f2fc;
+    --color--secondary-darkest: #002a37;
+    --color--secondary-dark: #00546e;
+    --color--secondary: #006989;
+    --color--secondary-light: #b3d2dc;
+    --color--secondary-lightest: #e6f0f3;
+    // Solaris
+    // If your opco site doesn't have solaris colors, override them like this
+    --color--primary-solaris: var(--color--primary);
+    --color--primary-solaris-light: var(--color--primary-dark);
+    --color--primary-solaris-lightest: var(--color--primary-lightest);
+}
