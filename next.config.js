@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     webpack: (config) => {
-        config.plugins.push(new MiniCssExtractPlugin());
+        //config.plugins.push(new MiniCssExtractPlugin());
         config.plugins.push(
             new MediaQueryPlugin({
                 include: [
@@ -17,7 +17,7 @@ module.exports = {
         config.module.rules.push({
             test: /\.scss$/,
             use: [
-                MiniCssExtractPlugin.loader,
+                //MiniCssExtractPlugin.loader,
                 'css-loader',
                 MediaQueryPlugin.loader,
                 'postcss-loader',
