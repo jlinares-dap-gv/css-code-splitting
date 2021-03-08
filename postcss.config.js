@@ -4,15 +4,15 @@ module.exports = {
     plugins: {
         'postcss-extract-media-query': {
             output: {
-                path: path.join(__dirname, 'public/css'),
-                name: '[query].css'
+                path: path.join(__dirname, '.next/static/css'),
+                name: '[name]-[query].css'
             },
             queries: {
                 'screen and (max-width: 20rem)': 'mobile',
                 'screen and (min-width: 64em)': 'desktop'
-
             },
-            extractAll: false
+            extractAll: false,
+            stats: true
         }
     }
 };

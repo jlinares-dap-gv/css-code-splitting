@@ -1,0 +1,19 @@
+@import '../../styles/variables/index.scss';
+
+.btn{
+    background-color: red;
+ }
+
+ //Medias
+@media screen and (max-width: $screen-min) {
+    .btn {
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: $tablet-portrait-upper-boundary) {
+    .btn {
+        color: black;
+        background-color: green;
+    }
+}

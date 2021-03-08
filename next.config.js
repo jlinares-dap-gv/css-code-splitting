@@ -1,10 +1,11 @@
-const MediaQueryPlugin = require('media-query-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
 module.exports = {
-    webpack: (config) => {
-        //config.plugins.push(new MiniCssExtractPlugin());
-        config.plugins.push(
+    sassOptions: {
+        includePaths: [path.join(__dirname, 'styles')],
+    },
+   /* webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+        /*config.plugins.push(
             new MediaQueryPlugin({
                 include: [
                     'example'
@@ -14,16 +15,16 @@ module.exports = {
                 }
             })
         );
+        
         config.module.rules.push({
             test: /\.scss$/,
             use: [
-                //MiniCssExtractPlugin.loader,
                 'css-loader',
-                MediaQueryPlugin.loader,
+                //MediaQueryPlugin.loader,
                 'postcss-loader',
                 'sass-loader'
             ]
         });
         return config;
-    },
+    },*/
 };
